@@ -22,8 +22,8 @@ ul {
 body {
   margin: 0;
 
-  background-color: body-bgc;
-  color: primary-text-color;
+  background-color: $body-bgc;
+  color: $primary-text-color;
 
   font-family: Roboto, sans-serif;
   font-size: 14px;
