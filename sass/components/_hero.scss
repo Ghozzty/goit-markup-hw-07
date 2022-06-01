@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
     background-color: $hero-bgc;
     background-image: linear-gradient((to right, $hero-overlay), $hero-overlay),
       url('../img/hero-bg.jpg');
@@ -14,7 +14,7 @@
     text-align: center;
     padding: 200px 0px;
   }
-  .section-hero-title {
+  .hero__title {
     margin-bottom: 30px;
   
     font-weight: 900;

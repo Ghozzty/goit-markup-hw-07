@@ -19,9 +19,9 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="header-nav">
-          <a class="logo" href="./index.html">Web<span class="logo logo--black">Studio</span></a>
+          <a class="logo" href="./index.html">Web<span class="logo logo__black">Studio</span></a>
 
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -36,7 +36,7 @@
         <ul class="header-address">
           <li class="header-address__item">
             <a class="header-address__link" href="mailto:info@devstudio.com">
-              <svg class="header-address__icon-mail" width="16" height="12">
+              <svg class="header-address__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
@@ -44,7 +44,7 @@
           </li>
           <li class="header-address__item">
             <a class="header-address__link" href="tel:+380961111111">
-              <svg class="header-address__icon-phone" width="10" height="16">
+              <svg class="header-address__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -54,9 +54,10 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <!-- hero -->
+      <section class="hero">
         <div class="container">
-          <h1 class="section-hero-title">
+          <h1 class="hero__title">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
@@ -128,7 +129,7 @@
         </div>
       </section>
 
-      <section class="section-slogans">
+      <section class="section section--no-padding-bot">
         <div class="container">
           <h2 class="vis-hid">Our slogans</h2>
           <ul class="slogans-list">
@@ -179,10 +180,10 @@
           </ul>
         </div>
       </section>
-
-      <section class="section-what-doing">
+      <!-- section-what-doing -->
+      <section class="section section--no-padding-top">
         <div class="container">
-          <h2 class="biggest-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
 
           <ul class="work-process-list">
             <li class="work-process-list__item">
@@ -192,7 +193,7 @@
                 height="294"
                 alt="формирование скелета проекта"
               />
-              <p class="work-process-list__signature">Десктопные приложения</p>
+              <p class="work-process-list__text">Десктопные приложения</p>
             </li>
 
             <li class="work-process-list__item">
@@ -202,7 +203,7 @@
                 height="294"
                 alt="адаптация проекта"
               />
-              <p class="work-process-list__signature">Мобильные приложения</p>
+              <p class="work-process-list__text">Мобильные приложения</p>
             </li>
             <li class="work-process-list__item">
               <img
@@ -211,26 +212,26 @@
                 height="294"
                 alt="дизайн проекта"
               />
-              <p class="work-process-list__signature">Дизайнерские решения</p>
+              <p class="work-process-list__text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
-
-      <section class="our-team">
+      <!-- our team -->
+      <section class="section section--bgc">
         <div class="container">
-          <h2 class="biggest-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="our-team-list">
-            <li class="our-team-list__card">
+            <li class="our-team-list__item">
               <img
                 src="./img/our-team/img4.jpg"
                 width="270"
                 height="260"
                 alt="фотография члена команды 1"
               />
-              <div class="our-team-list__under-card">
-                <h3 class="our-team-list__names">Игорь Демьяненко</h3>
-                <p class="our-team-list__position">Product Designer</p>
+              <div class="our-team-list__card">
+                <h3 class="our-team-list__title">Игорь Демьяненко</h3>
+                <p class="our-team-list__text">Product Designer</p>
                 <ul class="social-media-list">
                   <li class="social-media-list__item">
                     <a
@@ -275,16 +276,16 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team-list__card">
+            <li class="our-team-list__item">
               <img
                 src="./img/our-team/img5.jpg"
                 width="270"
                 height="260"
                 alt="фотография члена команды 2"
               />
-              <div class="our-team-list__under-card">
-                <h3 class="our-team-list__names">Ольга Репина</h3>
-                <p class="our-team-list__position">Frontend Developer</p>
+              <div class="our-team-list__card">
+                <h3 class="our-team-list__title">Ольга Репина</h3>
+                <p class="our-team-list__text">Frontend Developer</p>
                 <ul class="social-media-list">
                   <li class="social-media-list__item">
                     <a
@@ -329,16 +330,16 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team-list__card">
+            <li class="our-team-list__item">
               <img
                 src="./img/our-team/img6.jpg"
                 width="270"
                 height="260"
                 alt="фотография члена команды 3"
               />
-              <div class="our-team-list__under-card">
-                <h3 class="our-team-list__names">Николай Тарасов</h3>
-                <p class="our-team-list__position">Marketing</p>
+              <div class="our-team-list__card">
+                <h3 class="our-team-list__title">Николай Тарасов</h3>
+                <p class="our-team-list__text">Marketing</p>
                 <ul class="social-media-list">
                   <li class="social-media-list__item">
                     <a
@@ -383,16 +384,16 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team-list__card">
+            <li class="our-team-list__item">
               <img
                 src="./img/our-team/img7.jpg"
                 width="270"
                 height="260"
                 alt="фотография члена команды 4"
               />
-              <div class="our-team-list__under-card">
-                <h3 class="our-team-list__names">Михаил Ермаков</h3>
-                <p class="our-team-list__position">UI Designer</p>
+              <div class="our-team-list__card">
+                <h3 class="our-team-list__title">Михаил Ермаков</h3>
+                <p class="our-team-list__text">UI Designer</p>
                 <ul class="social-media-list">
                   <li class="social-media-list__item">
                     <a
@@ -440,10 +441,10 @@
           </ul>
         </div>
       </section>
-
-      <section class="our-clients-section">
+      <!-- our-clients-section -->
+      <section class="section">
         <div class="container">
-          <h2 class="biggest-title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
               <a class="clients-list__link" href="" aria-label="ссылка клиента">

@@ -22,8 +22,8 @@ ul {
 
 body {
   margin: 0;
-  background-color: body-bgc;
-  color: primary-text-color;
+  background-color: #ffffff;
+  color: #757575;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -51,11 +51,23 @@ input:active {
   margin: -1px;
 }
 
+.section {
+  padding: 94px 0;
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--no-padding-bot {
+  padding-bottom: 0;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +82,7 @@ input:active {
   line-height: 1.17;
 }
 
-.logo--black {
+.logo__black {
   color: #000000;
 }
 
@@ -182,13 +194,12 @@ input:active {
   color: #757575;
 }
 
-.header-address__icon-mail,
-.header-address__icon-phone {
+.header-address__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.section-hero {
+.hero {
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../img/hero-bg.jpg");
   background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../img/hero-bg.jpg");
@@ -203,7 +214,7 @@ input:active {
   padding: 200px 0px;
 }
 
-.section-hero-title {
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -507,10 +518,6 @@ input:active {
   margin-left: 5px;
 }
 
-.section-slogans {
-  padding: 94px 0;
-}
-
 .slogans-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,11 +563,7 @@ input:active {
   width: 270px;
 }
 
-.section-what-doing {
-  padding: 0 0 94px 0;
-}
-
-.biggest-title {
+.section__title {
   margin-bottom: 50px;
   text-align: center;
   color: #212121;
@@ -585,7 +588,7 @@ input:active {
   margin-right: 30px;
 }
 
-.work-process-list__signature {
+.work-process-list__text {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -608,8 +611,7 @@ input:active {
           justify-content: center;
 }
 
-.our-team {
-  padding: 94px 0;
+.section--bgc {
   background-color: #f5f4fa;
 }
 
@@ -619,7 +621,7 @@ input:active {
   display: flex;
 }
 
-.our-team-list__card {
+.our-team-list__item {
   background-color: #ffffff;
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -627,15 +629,15 @@ input:active {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list__card:not(:last-child) {
+.our-team-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-team-list__under-card {
+.our-team-list__card {
   padding: 30px 0;
 }
 
-.our-team-list__names {
+.our-team-list__title {
   margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
@@ -643,7 +645,7 @@ input:active {
   line-height: 1.18;
 }
 
-.our-team-list__position {
+.our-team-list__text {
   margin-bottom: 16px;
 }
 
@@ -687,11 +689,6 @@ input:active {
 .social-media-list__link:hover, .social-media-list__link:focus {
   background-color: #2196f3;
   fill: #ffffff;
-}
-
-.our-clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .clients-list {

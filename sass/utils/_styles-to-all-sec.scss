@@ -51,3 +51,13 @@ input:active {
   height: 0;
   margin: -1px;
 }
+
+.section {
+  padding: 94px 0;
+}
+.section--no-padding-top{
+  padding-top: 0;
+}
+.section--no-padding-bot{
+  padding-bottom: 0;
+}

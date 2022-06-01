@@ -1,7 +1,7 @@
 .header {
     border-bottom: 1px solid $header-bgc;
   }
-  .header .container {
+  .header__container {
     display: flex;
   }
   
@@ -16,7 +16,7 @@
     line-height: 1.17;
   }
   
-  .logo--black {
+  .logo__black {
     color: $logo-color;
   }
   /*
@@ -119,8 +119,8 @@
   }
   
   
-  .header-address__icon-mail,
-  .header-address__icon-phone {
+  .header-address__icon
+   {
     margin-right: 10px;
   
     fill: currentColor;
